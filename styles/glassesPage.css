@@ -1,0 +1,481 @@
+.landing {
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-width: max-content;
+    margin: 20px;
+    border: 5px #EFEFEF solid;
+    border-radius: 10px;
+    background-color: #EFEFEF;
+    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.25));
+    transition: all ease 0.25s;
+}
+
+.feature:hover {
+    transform: scale(102%);
+    transition: transform ease 0.25s;
+}
+
+.feature:hover > .bigGlass {
+    transform: scale(102%);
+    overflow: hidden;
+    transition: transform ease 0.3s;
+}
+
+.bigGlass {
+    width: 80vw;
+    border-radius: 5px;
+    margin-bottom: 80px;
+    height: 80vh;
+    object-fit: cover;
+    transition: transform ease 0.25s;
+}
+
+.landing h1 {
+    margin-top: 40px;
+    font-size: 3rem;
+    z-index: 10;
+}
+
+.glassesTitle {
+    position: absolute;
+    left: 50%;
+    bottom: 12%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+}
+
+.feature .buttons {
+    position: absolute;
+    bottom: 2%;
+}
+
+.feature .buttons button {
+    height: 40px;
+    width: 8vw;
+    margin: var(--standard-spacing) 5px;
+    filter: drop-shadow(10px 5px 4px rgba(0,0,0,0.25));
+    cursor: pointer;
+}
+
+.landing .sub {
+    margin-top: var(--standard-spacing);
+    z-index: 10;
+    font-size: 1.5rem;
+    opacity: 80%;
+}
+
+/* Quick Details Section */
+.quickDetails {
+    width: 100%;
+    background-color: var(--colour-background-light);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.quickDetails h1 {
+    font-size: 3rem;
+    margin: var(--standard-spacing);
+    
+}
+
+.productTitle {
+    margin-top: 5%;
+    font-size: 2rem;
+}
+
+.quickDetails .sub {
+    font-size: 1.5rem;
+    margin-bottom: var(--standard-spacing);
+}
+
+.quickDetails .buttons button {
+    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.25));
+    margin: 5px;
+    min-height: 30px;
+    min-width: max-content;
+    padding: 0.5vh 2vw;
+}
+
+.smallGlassDoubled {
+    margin-top: 5vh;
+    max-width: 90vw;
+    transition: transform 0.25s ease;
+    cursor: pointer;
+}
+
+.smallGlassDoubled:hover {
+    transform: scale(102%);
+    transition: transform 0.25s ease;
+}
+
+/* Details */
+
+.detailsSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vw 5vh;
+    overflow: hidden;
+}
+
+.detailsSection h1 {
+    font-size: 3rem;
+    margin: var(--standard-spacing);
+}
+
+.detailsSection p {
+    font-size: 1.5rem;
+    margin: var(--standard-spacing);
+}
+
+.details_1-group1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.smallGlass {
+    z-index: -1;
+    width: 70%;
+    height: fit-content;
+}
+
+.line {
+    margin: 10vh 5vw 15vh;
+    width: 80vw;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Details 2 */
+
+.details_2 {
+    max-width: 80vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.details_2 p {
+    font-size: 1rem;
+    opacity: 80%;
+}
+
+.detailsFeature {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 200px;
+    text-align: center;
+    margin: var(--standard-spacing);
+}
+
+/* Custom Icons */
+
+.cpuIcon {
+    margin-left: calc(50% - 32.5px);
+    padding: 20px var(--standard-spacing);
+    border-radius: var(--standard-spacing);
+    border: 3px solid black;
+    max-height: 65px;
+    max-width: 65px;
+}
+
+.fa-battery-full, .fa-tachometer-alt {
+    color: black;
+    font-size: 3.5rem;
+}
+
+.fiveGIcon {
+    height: 50px;
+}
+
+.glassesIcon {
+    height: 30px;
+}
+
+/* Buy Page */
+#purchase {
+    width: 80vw;
+    margin: 10vw;
+    position: relative;
+    display: flex;
+    height: 250vh;
+}
+
+.featureIMG {
+    width: calc(80% * 0.6);
+    position: fixed;
+    top: 25vh;
+}
+
+.buy {
+    position: absolute;
+    right: 0px;
+    top: 5vh;
+    width: 35%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.newProduct {
+    color: goldenrod;
+}
+
+.buyProduct {
+    font-size: 2.5rem;
+    margin: var(--standard-spacing) 0px;
+}
+
+.customizeProduct {
+    font-size: 1.5rem;
+    margin-bottom: var(--standard-spacing);
+}
+
+.optionContainer {
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: var(--standard-spacing);
+    margin-bottom: var(--standard-spacing);
+    cursor: pointer;
+}
+
+.buy h3 {
+    font-size: 1.5rem;
+    margin-right: var(--standard-spacing);
+}
+.buy h4 {
+    font-size: 0.75rem;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    /* margin: calc(var(--standard-spacing) / 2) 0px; */
+}
+
+.optionActive {
+    border: 1px solid blue;
+    background-color: rgba(0, 0, 255, 0.05);
+}
+
+/* Sizes */
+
+.sizes {
+    display: flex;
+    flex-direction: column;
+}
+
+span p {
+    width: 50%;
+    text-align: right;
+    max-height: 3rem;
+    margin-left: 5px;
+}
+
+/* Buy it now */
+.considerBuying {
+    margin-top: -15vh;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.buyQuestion {
+    font-size: 2rem;
+}
+
+.buyItNowImage {
+    margin-bottom: var(--standard-spacingd);
+}
+
+.grouper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.xl {
+    width: 30vw;
+    position: relative;
+}
+
+.xl button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 100%;
+    font-size: 4rem;
+    margin-top: -5vh;
+}
+
+/* Colours */
+
+.colourChoices .option {
+    flex-direction: row;
+}
+
+.colourChoices h3 {
+    margin-left: var(--standard-spacing);
+}
+
+.colourSample {
+    border-radius: 50%;
+    border: 2px rgba(0, 0, 0, 0.2) solid;
+    padding: var(--standard-spacing);
+}
+
+.black .colourSample {
+    background-color: rgb(41, 41, 41);
+}
+.silver .colourSample {
+    background-color: rgb(165, 164, 164);
+}
+.white .colourSample {
+    background-color: rgb(235, 235, 235);
+}
+.blue .colourSample {
+    background-color: rgb(40, 90, 216);
+}
+.red .colourSample {
+    background-color: rgb(225, 33, 33);
+}
+.green .colourSample {
+    background-color: rgb(54, 223, 68);
+}
+.yellow .colourSample {
+    background-color: rgb(244, 255, 44);
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#amount {
+    font-size: 1.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+/* Shopping Cart */
+#tally {
+    position: fixed;
+    width: 50vw;
+    bottom: 0;
+    background-color: rgb(221, 221, 221);
+    border-radius: 0px 10px 0px 0px;
+}
+
+.tallyControls {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--standard-spacing);
+}
+
+.tallyTitle {
+    font-size: 1.25rem;
+}
+
+.tallyControls, .tallyControls i {
+    color: black;
+    cursor: pointer;
+}
+
+.tallyControls i {
+    padding: 5px;
+}
+
+.tallyControls:hover > .iconContainer i {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.145);
+    border-radius: 50%;
+}
+
+.tallyContent {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--standard-spacing);
+}
+
+.tallyContent p {
+    font-size: 1.5rem;
+}
+
+.itemQuantity {
+    display: flex;
+}
+
+.tallyContent img {
+    width: 80px;
+}
+
+.tallyIconToggled, .tallyToggled {
+    display: none;
+}
+
+.purchaseButtonA {
+    margin: calc(var(--standard-spacing)/2);
+}
+
+@media screen and (max-width: 740px) {
+    .details_1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .details_1 h1 {
+        text-align: center;
+    }
+
+    .details_1-group1 {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .group1-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 250px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .smallGlass {
+        position: absolute;
+        width: 450px;
+        z-index: 1;
+    }
+}

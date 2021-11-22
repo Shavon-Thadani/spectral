@@ -1,0 +1,131 @@
+@import "main.css";
+@import "animations.css";
+
+nav {
+    background-color: var(--colour-background-light);
+    filter: drop-shadow(10px 5px 4px rgba(0,0,0,0.25));
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: all ease 0.25s;
+}
+
+.logo:hover {
+    letter-spacing: 6px;
+    transition: all ease 0.25s;
+}
+
+nav a, i {
+    color: var(--colour-neutral);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+nav i {
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    font-size: 1.25rem;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.nav-item {
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: 0.25s ease all;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: 0.25s ease all;
+}
+
+.nav-item-active {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-item-active:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    pointer-events: none;
+    transition: transform 0.25s ease-in-out;
+}
+
+.menu div {
+    width: 1.5rem;
+    height: 0.25rem;
+    margin: 0.2rem;
+    border-radius: 0.25rem;
+    background-color: var(--colour-neutral);
+    transition: 0.25s ease-out, opacity 0.25s ease;
+}
+
+@media screen and (max-width: 830px) {
+    .menu {
+        display: block;
+        margin-left: 30vw;
+        padding: 10px;
+        pointer-events: all;
+        transition: all ease 0.5s;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 10vh;
+        right: 0px;
+        width: 35%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+        padding-bottom: 20vh;
+        transform: translateX(100%);
+        background-color: white;
+    }
+    
+    .nav-item {
+        opacity: 0;
+    }
+
+    .nav-inactive {
+        transition: transform 0.25s ease-out;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .toggle .bar1 {
+        transform: rotate(-45deg) translateY(-2px);
+        transform-origin: right;
+    }
+    .toggle .bar2 {
+        opacity: 0;
+    }
+    .toggle .bar3 {
+        transform: rotate(45deg) translateY(2px);
+        transform-origin: right;
+    }
+}
+
+

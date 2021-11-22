@@ -1,0 +1,134 @@
+h1 {
+    border: 3px solid #c5c6c7;
+    text-align: center;
+    color: #66FCF1;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px #c5c6c7;
+}
+.box {
+    background-image: url(../FilesNeededForGloveshtml/motion\ gloves.jpg);
+    height: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-size: 40px;
+    font-family: "courier";
+    color: #c5c6c7;
+    font-size: 44px;
+    text-shadow: 1px 1px 2px black, 0 0 25px #66FCF1, 0 0 5px #45a29e;
+
+}
+
+.linkshome {
+    text-align:center;
+    font-size: 40px;
+
+}
+#price {
+    display: inline-block;
+    border: 2px solid #c5c6c7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px gray;
+    transition: 200ms;
+    color: #45a29e;
+}
+#price:hover {
+    box-shadow: 6px 6px 7px gray;
+    text-shadow: 1px 1px 2px black, 0 0 20px #66FCF1, 0 0 5px #45a29e;
+}
+#about {
+    display: inline-block;
+    border: 2px solid #c5c6c7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px gray;
+    transition: 200ms;
+    color: #45a29e;
+}
+#about:hover {
+    box-shadow: 6px 6px 7px gray;
+    text-shadow: 1px 1px 2px black, 0 0 20px #66FCF1, 0 0 5px #45a29e;
+}
+
+#home {
+    display: inline-block;
+    border: 2px solid #c5c6c7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px gray;
+    transition: 200ms;
+    color: #45a29e;
+}
+html {
+    background-color: #1f2833;
+    font-family: "courier";
+}
+
+.homelink {
+    text-align: center;
+    font-size: 40px;
+    color: #45a29e;
+}
+#home:hover {
+    box-shadow: 6px 6px 7px gray;
+    text-shadow: 1px 1px 2px black, 0 0 20px #66FCF1, 0 0 5px #45a29e;
+}
+
+.paraabout {
+    font-size: 40px;
+    color: #66FCF1;
+}
+
+.prices {
+    color: #66fcf1;
+    text-align: center;
+}
+
+.touchtheuntouchable {
+    color: #c5c6c7;
+    text-align: center;
+    font-size: 30px;
+}
+
+#basic {
+    display: inline-block;
+    border: 2px solid #c5c6c7;
+    padding: 20px 25px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px gray;
+    transition: 200ms;
+    color: #45a29e;
+
+}
+#basic:hover {
+    box-shadow: 6px 6px 7px gray;
+    text-shadow: 1px 1px 2px black, 0 0 20px #66FCF1, 0 0 5px #45a29e;
+}
+
+#pro {
+
+    display: inline-block;
+    border: 2px solid #c5c6c7;
+    padding: 20px 25px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px gray;
+    transition: 200ms;
+    color: #45a29e;
+}
+
+#pro:hover {
+    box-shadow: 6px 6px 7px gray;
+    text-shadow: 1px 1px 2px black, 0 0 20px #66FCF1, 0 0 5px #45a29e;
+}
+#motionall {
+    color: #c5c6c7;
+
+}
+
+#motionheader {
+    color: #66FCF1;
+    font-size: 44px;
+    text-shadow: 1px 1px 2px black, 0 0 25px #66FCF1, 0 0 5px #45a29e;
+}

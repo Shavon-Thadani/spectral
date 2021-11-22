@@ -1,0 +1,40 @@
+Spectal Website Style Guidelines
+
+The general style for all content pages will be as follows:
+
+Colors:
+All colours defined in main.css using variables. Other colours such as black, white and grays, are allowed, but discouraged.
+Hex codes:
+    #66fcf1;
+    #45a29e;
+    #c5c6c7;
+    #1f2833;
+    #121212;
+
+Typography:
+All* typography will be done using rem or em units, with a sans-serif font listed below (Subject to change):
+    Roboto
+
+Layout
+All content pages will have a global navbar and footer. All page-specific content will be below and above the afformentioned navbar and footer respectively.
+
+Page content should follow an apple.com-esque layout with large images and minimal text.
+
+Buying options should be one of the last sections on a given page.
+
+Buying options may include, but are not limited to:
+    Colour,
+    Price,
+    Size,
+    Resolution, 
+    Battery Life,
+    Additional Features,
+    Addons/Accessories,
+    etc.
+
+Index Page layout does not include ANY buying options, and showcases the individual products, with the feature product being Spectral Vision. All images and buttons will link to their respective pages.
+
+Settings Page Layout TBD, but follows afformentioned colour and typography stylings.
+
+Contact page is to be more of a meet-the-team page. 
+In a real project, there would be no faces and/or names, simply contact info. 

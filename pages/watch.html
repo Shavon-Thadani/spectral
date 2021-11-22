@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- Shavon Thadani -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Style Sheets -->
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/navbar.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/watchPage.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+
+        <!-- Javascript -->
+        <script src="../scripts/watch.js"></script>
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <!-- Tab Bar Styling -->
+        <title>Watch</title>
+        <link rel="icon" type="image/png" href="/images/TabIconImg.png">
+    </head>
+    <body style="background-color: var(--colour-background-light);">
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a class="home-button" href="../index.html">Spectral</a>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="glasses.html">Vision</a></li>
+                    <li class="nav-item"><a href="display.html">Screen</a></li>
+                    <li class="nav-item"><a href="gloves.html">Touch</a></li>
+                    <li class="nav-item"><a href="speakers.html">Sound</a></li>
+                    <li class="nav-item nav-item-active"><a href="#">Watch</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item"><i class="fas fa-cog"></i></li>
+                </ul>
+                <div class="menu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Your content here -->
+        <div style="width: 100%;">
+                <div style="padding-right: 10px; padding-left: 10px;">
+                  <br />
+                  <img src="https://i.ytimg.com/vi/Y_gLDlXUJKw/maxresdefault.jpg" alt="Watch photo" width="100%" height="100%" class="rounded">
+                  </img>
+                </div>
+                <div style="padding-right: 10px;padding-left: 10px;">
+                  <br />
+                  <h2  style="color:var(--colour-primary); font-weight:100; font-size: 50px;">Features</h2>
+                  <ul class="line-separated">
+                    <li style="color:var(--colour-neutral); font-size: 20px;">10x15cm Hollogram</li>
+                    <li style="color:var(--colour-neutral); font-size: 20px;"><br />Touch Interface on your wrist</li>
+                    <li style="color:var(--colour-neutral); font-size: 20px;"><br />Seemlessy intergrates with Spectral Vision</li>
+                    <li style="color:var(--colour-neutral); font-size: 20px;"><br />Compatible with Spectral gloves for Hollotouch</li>
+                    <li style="color:var(--colour-neutral); font-size: 20px;"><br />Heart Beat and Glucose Monitor</li>
+                    <li style="color:var(--colour-neutral); font-size: 20px;"><br />Pedometer</li>
+                    <li style="color:#202525;">.</li>
+                </ul>
+                <div class="columnleft">
+                  <h2 style="color:#A0FCF1; font-weight:100; font-size: 50px;">Hollogram size</h2>
+                  <button onclick="toggleHolloSize('magnum');"id="magnum"class="btn btn-outline-dark btn-block button1">
+                  <div class="column">
+                  <h3 style="color:var(--colour-neutral);font-size: 40px; ">Magnum</h3>
+                  <span class="line-2" style="color:var(--colour-neutral);font-size: 15px;">30% larger Hollogram</span>
+                  </div>
+                  <div class="column">
+                  <span class="line-1" style="color:var(--colour-neutral);font-size: 20px;"><br> From $499</span>
+                  </div>
+                </button>
+                <button id="piccolo" onclick="toggleHolloSize('piccolo');" style="border:2px solid #45a29e" class="btn btn-outline-dark btn-block button1">
+                  <div class="column">
+                  <h3 style="color:var(--colour-neutral);font-size: 40px;">Piccolo</h3>
+                  <span class="line-2" style="color:var(--colour-neutral);font-size: 15px;">15% lighter</span>
+                  </div>
+                  <div class="column">
+                  <span class="line-1" style="color:var(--colour-neutral);font-size: 20px;"><br> From $479</span>
+                  </div>
+                </button>
+                  <br />
+                  <br />
+                  <h2 style="color:#A0FCF1; font-weight:100; font-size: 50px;">Colours</h>
+                  <br />
+                  <button id="blue" onclick="toggleColour('blue');" style="border:6px solid #45a29e" type="button" class="btn btn-primary btn-circle btn-xl">
+                  </button>
+                  <button id="green" onclick="toggleColour('green');" type="button" class="btn btn-success btn-circle btn-xl">
+                  </button>
+                  <button id="yellow" onclick="toggleColour('yellow');" type="button" class="btn btn-warning btn-circle btn-xl">
+                  </button>
+                  <button id="red" onclick="toggleColour('red');"type="button" class="btn btn-danger btn-circle btn-xl">
+                  </button>
+                    <br />
+                </div>
+                <div class="columnright">
+                  <h2 style="color:#A0FCF1; font-weight:100; font-size: 50px;">Band size</h2>
+                  <button id="large" onclick="toggleBandSize('large');"class="btn btn-outline-dark btn-block button1">
+                  <div class="column">
+                  <h3 style="color:var(--colour-neutral);font-size: 40px;">Large</h3>
+                  <span class="line-2" style="color:var(--colour-neutral);font-size: 15px;">Fits 140-220mm Watchs</span>
+                  </div>
+                  <div class="column">
+                  <br />
+                  </div>
+                </button>
+                <button id="regular" onclick="toggleBandSize('regular');" style="border:2px solid #45a29e" class="btn btn-outline-dark btn-block button1">
+                  <div class="column">
+                  <h3 style="color:var(--colour-neutral);font-size: 40px;">Regular</h3>
+                  <span class="line-2" style="color:var(--colour-neutral);font-size: 15px;">Fits 110-190mm Watchs</span>
+                  </div>
+                  <div class="column">
+                  <span class="line-1"><br></span>
+                  </div>
+                </button>
+                <br />
+                <br />
+                <h2 style="color:#A0FCF1; font-weight:100; font-size: 50px;" >Connectivity</h2>
+                <button id="gps" onclick="toggleConnectivity('gps');" style="border:2px solid #45a29e" class="btn btn-outline-dark btn-block button1">
+                <div class="column">
+                <h3 style="color:var(--colour-neutral); font-size: 40px;">GPS</h3>
+                <span class="line-2" style="color:var(--colour-neutral);font-size: 15px;">Make calls and send messages with your Spectral Vision nearby</span>
+                </div>
+                <div class="column">
+                  <br />
+                </div>
+              </button>
+              <br />
+              <button id="cell" onclick="toggleConnectivity('cell');"class="btn btn-outline-dark btn-block button1">
+                <div class="column">
+                <h3 style="color:var(--colour-neutral); font-size: 40px;">GPS + Celluar</h3>
+                <span class="line-2" style="color:var(--colour-neutral);font-size:15px;">Make calls and send messages with just your Spectral Watch</span>
+                </span>
+                </div>
+                <div class="column">
+                <span class="line-1" style="color:var(--colour-neutral);font-size:15px;"><br>+ $200</span>
+                <br/>
+                <br/>
+                </div>
+              </button>
+                </div>
+
+
+
+
+
+                </div>
+                <div style="margin:30px; margin-top:20px;margin-bottom:20px">
+                  <div style="text-align:center;">
+
+                    <button style="border: 2px solid var(--colour-secondary);font-size:30px;"onclick="finalprice();"id="buy now" class="btn btn-outline-dark btn-block button1">  <span class="line-2" style="color:var(--colour-primary);font-size: 30px;">Buy Now <br />$479</span>
+                    </button>
+                  </div>
+                  </div>
+            </div>
+
+      </body>
+        <footer>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="gloves.html">Vision</a></li>
+              <li class="footer-item"><p>|</p></li>
+              <li class="footer-item"><a href="display.html">Screen</a></li>
+              <li class="footer-item"><p>|</p></li>
+              <li class="footer-item"><a href="gloves.html">Touch</a></li>
+              <li class="footer-item"><p>|</p></li>
+              <li class="footer-item"><a href="speakers.html">Sound</a></li>
+              <li class="footer-item"><p>|</p></li>
+              <li class="footer-item"><a href="watch.html">Watch</a></li>
+              <li class="footer-item"><p>|</p></li>
+              <li class="footer-item"><a href="contact.html">Contact</a></li>
+              <li class="footer-item"><p>|</p></li>
+              <li class="footer-item"><a href="settings.html">Settings</a></li>
+            </ul>
+        </footer>
+    </body>
+    <script src="../scripts/navbar.js"></script>
+</html>
